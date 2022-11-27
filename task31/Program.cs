@@ -10,11 +10,10 @@ for (int i = 0; i < count; i++)
     Console.Write(" " + array[i]);
 }
 
-Console.WriteLine();
+
 
 for(int i = 0; i < count; i++)
 {
-    if (array[i] < 0){array[i] = Math.Abs(array[i]);}
-    else{array[i] = -(array[i]); }
-    Console.Write(" " + array[i]);
+    array[i] = array[i] * -1 ;
 }
+Console.WriteLine(" новый массив  " + string.Join(" ",array));
