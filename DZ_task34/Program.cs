@@ -10,13 +10,13 @@ int[] list(int leni)
     return lst;
 }
 
-
- Console.WriteLine(string.Join(" ",list(len)));
+int[] lst = list(len);
+ Console.WriteLine(string.Join(" ",lst));
  int count = 0;
 
- for(int i = 0; i < list(len).Length; i++)
+ for(int i = 0; i < lst.Length; i++)
  {
-    if (list(len)[i] % 2 == 0) {count += 1;}
+    if (lst[i] % 2 == 0) {count += 1;}
  }
 
  Console.WriteLine(count);
